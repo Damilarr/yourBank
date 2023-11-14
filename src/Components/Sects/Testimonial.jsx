@@ -2,7 +2,7 @@ import React from "react";
 import IndividualBtn from "../IndividualBtn";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import Carouseltext from "./carouseltext";
+import Carouseltext from "./Carouseltext";
 
 const Testimonial = () => {
   const responsive = {
