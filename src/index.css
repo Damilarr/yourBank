@@ -31,3 +31,6 @@
 .feat {
   @apply text-col60  bg-grey10;
 }
+.react-multiple-carousel__arrow::before {
+  @apply text-col65 shadow-2xl font-semibold;
+}

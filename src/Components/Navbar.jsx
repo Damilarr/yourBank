@@ -4,8 +4,8 @@ import Button from "./Button";
 
 const Navbar = () => {
   return (
-    <nav className="flex border border-grey15 justify-between items-center px-4 py-2 md:py-3 shadow-md rounded-l-full rounded-r-full bg-[#1c1c1c]">
-      <img src={Logo} alt="Logo" className="w-14 sm:w-24" />
+    <nav className="flex border border-grey15 justify-between items-center px-4 py-3 md:py-3 shadow-md rounded-l-full rounded-r-full bg-[#1c1c1c]">
+      <img src={Logo} alt="Logo" className="w-24" />
       <div className="hidden sm:flex space-x-3 text-white text-xs sm:text-sm lg:text-base justify-between items-center">
         <a
           href=""
@@ -36,7 +36,9 @@ const Navbar = () => {
         <button className="px-2 py-3 bg-transparent border-0">Sign Up</button>
         <Button text="Login" />
       </div>
-      <button className="block sm:hidden fa fa-search bg-col60"></button>
+      <button className="block sm:hidden text-lg">
+        <i class="fa-solid fa-bars-staggered text-col60"></i>
+      </button>
     </nav>
   );
 };
