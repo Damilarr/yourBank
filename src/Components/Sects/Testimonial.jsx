@@ -41,7 +41,7 @@ const Testimonial = () => {
       </div>
       <div className="w-full">
         <Carousel
-          swipeable={false}
+          swipeable={true}
           draggable={false}
           showDots={true}
           responsive={responsive}
