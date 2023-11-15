@@ -1,0 +1,50 @@
+import React from "react";
+import HeroImage from "../assets/CareerHero.png";
+
+const Careers = () => {
+  return (
+    <section className="w-full py-10 h-screen">
+      <div className="bg-grey15 hidden overflow-hidden p-3 sm:p-5 md:p-7 lg:p-10 rounded-xl lg:flex lg:flex-row flex-col-reverse lg:justify-end relative">
+        <div className="lg:flex flex-col hidden bg-grey10 lg:w-1/2 rounded-3xl lg:rounded-br-[3.5rem]  lg:bottom-auto bottom-10  right-auto left-auto w-11/12  lg:left-10 lg:rounded-bl-md lg:rounded-tl-md p-9 lg:p-12 h-1/2 lg:h-fit space-y-7 lg:space-y-4 absolute">
+          <h2 className="text-center  lg:text-left text-3xl sm:text-4xl lg:text-5xl">
+            Welcome to <span className="text-col60">YourBank Careers!</span>
+          </h2>
+          <p className="text-center  lg:text-left font-light text-grey70 py-4 text-lg">
+            Join our team and embark on a rewarding journey in the banking
+            industry. At YourBank, we are committed to fostering a culture of
+            excellence and providing opportunities for professional growth. With
+            a focus on innovation, customer service, and integrity, we strive to
+            make a positive impact in the lives of our customers and
+            communities. Join us today and be a part of our mission to shape the
+            future of banking.
+          </p>
+        </div>
+        <img
+          src={HeroImage}
+          alt="Career image"
+          className="h-1/2 hidden lg:block"
+        />
+        {/* -------------------------------------- */}
+      </div>
+      <div className="bg-grey15 lg:hidden overflow-hidden  p-7 flex flex-col h-[50%] rounded-xl relative">
+        <img src={HeroImage} alt="hero image" className="absolute " />
+        <div className="flex flex-col left-0 right-0 bottom-7  p-4 bg-grey10 absolute">
+          <h2 className="text-center text-3xl sm:text-4xl">
+            Welcome to <span className="text-col60">YourBank Careers!</span>
+          </h2>
+          <p className="text-center lg:text-left font-light text-grey70 py-4 text-lg">
+            Join our team and embark on a rewarding journey in the banking
+            industry. At YourBank, we are committed to fostering a culture of
+            excellence and providing opportunities for professional growth. With
+            a focus on innovation, customer service, and integrity, we strive to
+            make a positive impact in the lives of our customers and
+            communities. Join us today and be a part of our mission to shape the
+            future of banking.
+          </p>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Careers;

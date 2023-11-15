@@ -27,6 +27,9 @@ export default {
         grey70: "#B3B3B3",
         grey75: "#BFBFBF",
       },
+      backgroundImage: {
+        CareerHero: "url('/CareerHero.png')",
+      },
       fontFamily: {
         lexend: ["Lexend", "sans-serif"],
       },
