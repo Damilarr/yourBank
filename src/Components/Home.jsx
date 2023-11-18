@@ -1,5 +1,4 @@
 import React from "react";
-import Navbar from "./Navbar";
 import HeroImg from "../assets/Container.png";
 import Abstract from "../assets/Abstract.png";
 import Button from "./Button";
@@ -13,7 +12,6 @@ import Footer from "./Footer";
 const Home = () => {
   return (
     <section className="w-full">
-      {/* <Navbar /> */}
       {/* Hero Section */}
       <section className="flex px-2 md:px-0 flex-col md:flex-row font-lexend justify-around w-full py-8 items-start">
         <div className="py-3 flex items-center md:items-start flex-col text-white md:w-1/2 w-full space-y-3">

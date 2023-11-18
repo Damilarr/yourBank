@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import { useLocation } from "react-router-dom";
 
 const Navbar = () => {
-  const { pathname } = useLocation();
+  const { pathname } = useLocation("/");
   return (
     <nav className="flex border border-grey15 justify-between items-center px-4 py-3 md:py-3 shadow-md rounded-l-full rounded-r-full bg-[#1c1c1c]">
       <img src={Logo} alt="Logo" className="w-24" />
@@ -28,13 +28,17 @@ const Navbar = () => {
         </Link>
         <Link
           to={"/about"}
-          className="hover:bg-grey15 rounded-l-full rounded-r-full active:bg-grey15 transition-all hover:px-5 py-3"
+          className={`hover:bg-grey15 rounded-l-full rounded-r-full active:bg-grey15 transition-all hover:px-5 py-3 ${
+            pathname === "/about" ? "bg-grey15 px-5" : "bg-transparent"
+          }`}
         >
           About
         </Link>
         <Link
           to={"/security"}
-          className="hover:bg-grey15 rounded-l-full rounded-r-full active:bg-grey15 transition-all hover:px-5 py-3"
+          className={`hover:bg-grey15 rounded-l-full rounded-r-full active:bg-grey15 transition-all hover:px-5 py-3 ${
+            pathname === "/security" ? "bg-grey15 px-5" : "bg-transparent"
+          }`}
         >
           Security
         </Link>
