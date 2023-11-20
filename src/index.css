@@ -34,6 +34,9 @@
 .react-multiple-carousel__arrow::before {
   @apply text-col65 shadow-2xl font-semibold;
 }
+.react-multi-carousel-dot--active button {
+  @apply bg-col60 shadow-xl;
+}
 .page-sectionn {
   @apply w-full px-4 sm:px-9 md:px-12 lg:px-16 py-8;
 }

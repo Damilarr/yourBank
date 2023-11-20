@@ -2,6 +2,8 @@ import React from "react";
 import { HeroTop } from "./Careers";
 import AboutHero from "../assets/AboutHero.png";
 import Mission from "./Sects/Mission";
+import Press from "./Sects/Press";
+import Footer from "./Footer";
 
 const About = () => {
   return (
@@ -14,6 +16,8 @@ const About = () => {
         imgg={AboutHero}
       />
       <Mission />
+      <Press />
+      <Footer show={false} />
     </section>
   );
 };

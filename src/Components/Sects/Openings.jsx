@@ -10,10 +10,10 @@ export const Box = ({ jt, location, dept, about, ra }) => {
           {jt}
         </h1>
         <div className="flex font-light flex-wrap md:space-y-3 lg:space-y-0 lg:space-x-3">
-          <span className="bg-grey10 py-1 px-2 rounded-l-full rounded-r-full">
+          <span className="bg-grey10 border border-grey15 py-1 px-2 rounded-l-full rounded-r-full">
             Location: {location}
           </span>
-          <span className="bg-grey10 py-1 px-2 rounded-l-full rounded-r-full">
+          <span className="bg-grey10 border border-grey15 py-1 px-2 rounded-l-full rounded-r-full">
             Department: {dept}
           </span>
         </div>
@@ -64,6 +64,7 @@ const Openings = () => {
               location={job.location}
               dept={job.dept}
               ra={job.ql}
+              key={job.jt}
             />
           );
         })}

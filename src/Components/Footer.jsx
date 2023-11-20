@@ -1,11 +1,19 @@
 import React from "react";
 import dotGlow from "../assets/dotglow.png";
 import Logo from "../assets/Logo.png";
-
-const Footer = () => {
+//
+const Footer = ({ show = true }) => {
   return (
-    <section className="py-16 flex flex-col absolute left-0 h-full w-full space-y-14">
-      <div className="flex justify-center items-center pb-9  px-4 sm:px-10">
+    <section
+      className={` ${
+        show ? "pt-16 space-y-14" : ""
+      }  justify-end flex flex-col absolute left-0 h-fit w-full`}
+    >
+      <div
+        className={`${
+          show ? "flex" : "hidden"
+        } justify-center items-center py-9  px-4 sm:px-10`}
+      >
         <div className="flex md:flex-row flex-col md:w-full lg:w-11/12 xl:w-5/6 justify-between items-center border border-grey15 rounded-lg mx-auto bg-grey11 p-4 md:p-6 lg:p-9 relative overflow-clip">
           <div className="flex md:text-left text-center space-y-3 md:space-y-0 flex-col w-full md:w-4/5">
             <h1 className="text-white  font-medium text-2xl sm:text-3xl">
