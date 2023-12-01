@@ -1,12 +1,11 @@
 import React, { useEffect, useState } from "react";
 import Logo from "../assets/Logo.png";
-import Button from "./Button";
 import { Link } from "react-router-dom";
 import { useLocation } from "react-router-dom";
 
 const Navbar = () => {
   const { pathname } = useLocation("/");
-  let [showing, setShowing] = useState(true);
+  let [showing, setShowing] = useState(false);
 
   return (
     <nav className="flex border relative border-grey15 justify-between items-center px-4 py-3 md:py-3 shadow-md rounded-l-full rounded-r-full bg-[#1c1c1c]">

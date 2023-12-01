@@ -6,7 +6,7 @@ import Work from "../../assets/work.png";
 
 export const BenBox1 = (props) => {
   return (
-    <div className="md:w-1/2 w-full bg-gradient-to-tl flex flex-col from-grey11 via-grey11 md:rounded-tr-[2rem] md:rounded-bl-[2rem] md:rounded-tl-2xl md:rounded-br-2xl rounded-t-[2rem] rounded-b-2xl p-6 space-y-4 to-grey15">
+    <div className="md:w-1/2 bg-[url('/src/assets/SecurityBg.png')] bg-no-repeat w-full flex flex-col bg-grey11 md:rounded-tr-[2rem] md:rounded-bl-[2rem] md:rounded-tl-[3rem] md:rounded-br-2xl rounded-t-[3rem] rounded-b-2xl p-6 space-y-4">
       <div className="flex space-x-3 items-center">
         <img src={props.img} className="w-14" alt={props.title} />
         <h2 className="text-lg font-lexend">{props.title}</h2>
@@ -17,7 +17,7 @@ export const BenBox1 = (props) => {
 };
 export const BenBox2 = (props) => {
   return (
-    <div className="md:w-1/2 w-full  bg-gradient-to-tl rounded-t-[2rem] rounded-b-2xl  flex flex-col from-grey11 via-grey11 md:rounded-br-[2rem] md:rounded-tl-[2rem] md:rounded-bl-2xl md:rounded-tr-2xl  p-6 space-y-4 to-grey15">
+    <div className="md:w-1/2 w-full bg-[url('/src/assets/SecurityBg.png')] bg-no-repeat rounded-t-[3rem] rounded-b-2xl  flex flex-col bg-grey11 md:rounded-br-[2rem] md:rounded-tl-[3rem] md:rounded-bl-2xl md:rounded-tr-2xl  p-6 space-y-4">
       <div className="flex space-x-3 items-center">
         <img src={props.img} className="w-14" alt={props.title} />
         <h2 className="text-lg font-lexend">{props.title}</h2>
