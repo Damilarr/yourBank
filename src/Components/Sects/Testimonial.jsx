@@ -5,21 +5,22 @@ import "react-multi-carousel/lib/styles.css";
 import Carouseltext from "./Carouseltext";
 
 const Testimonial = () => {
+  const mobile = window.navigator.maxTouchPoints > 1;
   const responsive = {
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
       items: 3,
-      slidesToSlide: 3, // optional, default to 1.
+      slidesToSlide: 3,
     },
     tablet: {
       breakpoint: { max: 1024, min: 464 },
       items: 2,
-      slidesToSlide: 2, // optional, default to 1.
+      slidesToSlide: 2,
     },
     mobile: {
       breakpoint: { max: 464, min: 0 },
       items: 1,
-      slidesToSlide: 1, // optional, default to 1.
+      slidesToSlide: 1,
     },
   };
   return (
@@ -45,16 +46,15 @@ const Testimonial = () => {
           draggable={false}
           showDots={true}
           responsive={responsive}
-          ssr={true} // means to render carousel on server-side.
+          ssr={true}
           infinite={true}
-          // autoPlay={this.props.deviceType !== "mobile" ? true : false}
+          autoPlay={mobile}
           autoPlaySpeed={1000}
           keyBoardControl={true}
           customTransition="all .5"
           transitionDuration={500}
           containerClass="carousel-container"
           removeArrowOnDeviceType={["tablet", "mobile"]}
-          // deviceType={this.props.deviceType}
           dotListClass="custom-dot-list-style"
           itemClass="carousel-item-padding-40-px"
         >
@@ -66,24 +66,16 @@ const Testimonial = () => {
             author="John D"
           />
           <Carouseltext
-            text="I recently started my own business, and YourBank has been instrumental
-        in helping me set up my business accounts and secure the financing I
-        needed. Their expert guidance and tailored solutions have been
-        invaluable."
+            text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, soluta? Suscipit quaerat ad, a veniam, harum, eum praesentium cumque laudantium doloremque sit totam libero laborum asperiores aspernatur? Reprehenderit, tempore minus!"
             author="Mane S"
           />
           <Carouseltext
-            text="I recently started my own business, and YourBank has been instrumental
-        in helping me set up my business accounts and secure the financing I
-        needed. Their expert guidance and tailored solutions have been
-        invaluable."
+            text="voluptates exercitationem reiciendis, molestias fugit provident, nobis ex voluptatum animi facere distinctio suscipit doloremque necessitatibus. Consequuntur?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus offici"
             author="Emily G"
           />
           <Carouseltext
-            text="I recently started my own business, and YourBank has been instrumental
-        in helping me set up my business accounts and secure the financing I
-        needed. Their expert guidance and tailored solutions have been
-        invaluable."
+            text="adipisicing elit. Delectus officiis temporibus nulla doloremque sapiente qui similique nobis aliquid, minus rerum, ipsum consectetur, cumque vero ad soluta totam amet tempore repu.fuga illum sint magni voluptatem ipsa mollitia ducimus alias odio perferendis laborum"
             author="Sara T"
           />
         </Carousel>
